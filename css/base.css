@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* 글자모양, 크기, 색상 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:12px;
+  color:#333333;
+}
+
+a{
+  text-decoration: none;
+  color:#333333;
+}
+
+.h_inner{background:#4E4D5F;}
+.h_top{
+  width:1020px;
+  height:30px;
+  margin:0px auto;
+}
+
+.sns{
+  width:760px;float:left;
+  text-align:right;
+}
+header .lnb{
+  width:260px;float:right;
+}
+header .lnb > ul{
+  display:flex;
+  justify-content: space-around;
+  background:#525d9f;
+}
+.lnb a{
+  color:#ffffff;
+  line-height:30px;
+}
+header .lnb > ul > li::after{
+  content:'·';
+  color:#ffffff;
+  padding-left:22px;
+}
+.lnb > ul > li:last-child:after{
+  display:none;
+}
+
+.h_bottom{
+  width:1020px;height:80px;
+  margin:0px auto;
+}
+
+.gnb{
+  width:1020px;
+  position:relative;
+  top:-35px;
+}
+.gnb > ul{
+  display:flex;
+  justify-content: end;
+}
+.gnb > ul > li > a{
+  padding:0px 20px;
+  margin:0px 5px;
+  font-size:16px;
+  font-weight:500
+}
+.gnb > ul > li > a:hover{
+  color:#525d9f;
+}
+.gnb > ul > li:last-child > a:hover{
+  color:#10a010;
+}
+
+.g_wrap{
+  width:100%;
+  background:#ffff00;
+  height:40px;
+  position:absolute;
+  top:30px;left:0px;
+}
+
+/* 푸터서식 */
+.f_inner{
+  width:1020px;
+  margin:0px auto;
+  position:relative;
+}
+
+.f_inner > h2{
+  position:absolute;
+  right:0px;
+}
+
+.f_inner .lnb{}
+.f_inner .lnb > ul{}
+.f_inner .lnb > ul > li{
+  display:inline;
+}
+.f_inner .lnb > ul > li > a{
+  line-height:40px;
+  color:#333333;
+  padding:0px 10px;
+}
+.f_inner .lnb > ul > li >a:hover{text-decoration: underline;}
+.f_inner address{
+  padding-top:20px;
+}
